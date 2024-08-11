@@ -64,6 +64,11 @@ tar -zxvf linux_amd64_client.tar.gz
 ./npc install -server=192.168.58.105:8024 -vkey=lyxp4jlp2fhego8g -type=tcp
 ```
 
+```shell
+# 发现连接哪里 为 "离线"  重启一下 NPC
+./npc restart
+```
+
 ## 功能说明
 
 ### socks代理
