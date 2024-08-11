@@ -40,5 +40,26 @@ nano|vi|vim   /etc/nps/conf/nps.conf
 nps start 
 ```
 
+## NPC 安装
 
+> NPC 安装在内网的环境中 通过NPS进行内网穿透
 
+### 1.下载NPC
+
+``` shell
+wget https://github.com/ehang-io/nps/releases/download/v0.26.10/linux_amd64_client.tar.gz
+tar -zxvf linux_amd64_client.tar.gz
+```
+
+### 2.在NPS配置客户端
+
+![添加客户端](images/232713551240317.png)
+![设置客户端](images/70806353356973.png)
+![获取客户端连接方式](images/383345966920329.png)
+
+```shell
+#如果只是单次使用，比如这个客户端只是用一次，那么就执行：
+./npc -server=192.168.58.105:8024 -vkey=lyxp4jlp2fhego8g -type=tcp
+#如果是需要直接安装，后续需要客户端开关机都能保持在线，需要添加install参数：
+./npc install -server=192.168.58.105:8024 -vkey=lyxp4jlp2fhego8g -type=tcp
+```
