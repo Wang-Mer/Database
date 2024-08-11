@@ -34,8 +34,10 @@ nano|vi|vim   /etc/nps/conf/nps.conf
 
 配置结束以后，使用以下命令启动NPS服务
 
+### 4.启动nps
+
 ```shell
-nps start #启动nps
+nps start 
 ```
 
 
